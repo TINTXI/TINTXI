@@ -77,12 +77,13 @@
 <body>
 
 <div id="buttonContainer">
-    <button id="loadButton"><span class="blink">ACCEDE AQUI 1</span></button>
-    <button id="loadButton2"><span class="blink">ACCEDE AQUI 2</span></button>
+    <button id="loadButton"><span class="blink">CANALEX LALIG</span></button>
+    <button id="loadButton2"><span class="blink">CANALEX TAZN</span></button>
+    <button id="loadButton2"><span class="blink">CANALEX VOMIXTAR</span></button>
 </div>
 
 <div id="content"></div>
-<button id="backButton">ATRAS</button>
+<button id="backButton">PULSA ATRAS</button>
 <div id="loader">Cargando...</div>
 
 <script>
@@ -122,6 +123,11 @@
     });
 
     document.getElementById('loadButton2').addEventListener('click', function() {
+        const url = 'https://raw.githubusercontent.com/TINTXI/TINTXI/main/CANALEX.ACEXTREAM.html '; 
+        loadContent(url);
+    });
+    
+    document.getElementById('loadButton3').addEventListener('click', function() {
         const url = 'https://raw.githubusercontent.com/TINTXI/TINTXI/main/CANALEX.ACEXTREAM.html '; 
         loadContent(url);
     });
